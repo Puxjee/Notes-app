@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Notes</h1>
+        <div class="btns">
+          <button id="search">
+            <img src="assets/search.png" alt="search" />
+          </button>
+          <button id="info">
+            <img src="assets/info.png" alt="info" />
+          </button>
+        </div>
+      </header>
+      <div class="notes">
+        <div class="empty">
+          <img src="assets/empty.png" alt="empty" />
+          <p>Create your first note !</p>
+        </div>
+        <div class="new-note">
+          <div id="new-note-btns">
+            <button id="back">
+              <img src="assets/back.png" alt="back" />
+            </button>
+            <button id="save">
+              <img src="assets/save.png" alt="save" />
+            </button>
+          </div>
+          <div id="inputs">
+            <input type="text" placeholder="Title" id="title" />
+            <textarea placeholder="Type something..." id="content"></textarea>
+          </div>
+        </div>
+        <div class="not-empty">
+          <div class="note">
+            <h2 class="note-title">
+              Book Review : The Design of Everyday Things by Don Norman
+            </h2>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <button id="add">
+          <img src="assets/plus.png" alt="add" />
+        </button>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
