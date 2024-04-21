@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   height: 80vh;
   max-height: 850px;
   max-width: 500px;
@@ -26,6 +26,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: hidden; /* Hide the vertical scrollbar */
+  overflow-x: auto;
 }
 
 header {
@@ -96,6 +98,12 @@ footer button {
   font-weight: 500;
 }
 
+.notes .empty img {
+  width: 80%;
+  max-width: 300px;
+  margin: 20px;
+}
+
 .notes {
   flex-grow: 1;
   overflow-y: auto;
@@ -112,16 +120,7 @@ footer button {
   margin: 10px 20px;
 }
 
-#new-note-btns button {
-  padding: 15px;
-  width: 50px;
-  border-radius: 15px;
-  background: #3b3b3b;
-  color: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
+
 
 .new-note #inputs {
   display: flex;
@@ -152,15 +151,79 @@ footer button {
   height: 200px;
 }
 
+
 .not-empty .note {
     margin-bottom: 10px;
     background: #FF9E9E;
     padding: 20px;
     border-radius: 15px;
     width: 90%;
+    height: 100%;
     margin: 15px auto;
+
+
 }
 
 .not-empty .note:hover {
     cursor: pointer;
 }
+
+.note-view {
+  /* display: flex; */
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+}
+
+#view-note-btns{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+#view-note-btns button,
+#new-note-btns button {
+  padding: 15px;
+  width: 50px;
+  border-radius: 15px;
+  background: #3b3b3b;
+  border: none;
+  outline: none;
+}
+
+#view-note-btns button:hover,
+#new-note-btns button:hover {
+  background: #4b4b4b;
+  cursor: pointer;
+} 
+
+.note-content .note-title {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+.note-title {
+  overflow-wrap: break-word;
+  color: #3d3c3c
+}
+
+.note-content .note-text{
+  font-weight: 200;
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 20vw;
+  font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px; 
+}
+
+
