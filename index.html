@@ -18,10 +18,10 @@
         <h1>Notes</h1>
         <div class="btns">
           <button id="search">
-            <input type="text" placeholder="Search" id="search-input" />
             <img src="assets/search.png" alt="search" />
-            
           </button>
+          <input type="text" placeholder="Search" id="search-input" />
+
           <button id="info">
             <img src="assets/info.png" alt="info" />
           </button>
@@ -35,9 +35,9 @@
         <div class="new-note">
           <div id="new-note-btns">
             <button class="back">
-              <img src="assets/back.png" alt="back" />
+              <img src="assets/back.png" alt="back" class="back-img"/>
             </button>
-            <button class="save" onclick="saveNote()">
+              <button class="save" >
               <img src="assets/save.png" alt="save" />
             </button>
           </div>
@@ -48,30 +48,19 @@
         </div>
         <div class="not-empty"></div>
         <div class="note-view">
-          <div id="view-note-btns">
+          <div class="view-note-btns">
             <button class="back">
-              <img src="assets/back.png" alt="back" />
+              <img src="assets/back.png" alt="back" class="back-img"/>
             </button>
             <button class="edit">
               <img src="assets/edit.png" alt="edit" />
             </button>
           </div>
-          <!-- <div class="note-content">
-            <h2 class="note-title">
-              Book Review : The Design of Everyday Things by Don Norman
-            </h2>
-            <p class="note-text">The Design of Everyday Things is required reading for anyone who is interested in the user experience. I personally like to reread it every year or two.
-              <br>
-              <br>
-              Norman is aware of the durability of his work and the applicability of his principles to multiple disciplines. 
-              <br>
-              <br>
-              If you know the basics of design better than anyone else, you can apply them flawlessly anywhere.</p>
-          </div> -->
+           
         </div>
       </div>
       <footer>
-        <button id="add">
+        <button class="add">
           <img src="assets/plus.png" alt="add" />
         </button>
       </footer>
